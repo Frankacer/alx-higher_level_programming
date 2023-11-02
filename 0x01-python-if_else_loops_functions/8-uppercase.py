@@ -7,8 +7,8 @@ def uppercase(str):
     offset = ord('a') - ord('A')
     for i in range(len(str)):
         if islower(str[i]):
-            c = ord(str[i]) - offset
+            c = chr(ord(str[i]) - offset)
         else:
             c = str[i]
-        print("{}".format(chr(c)), end="")
+        print("{}".format(c), end="")
     print("\n", end="")
