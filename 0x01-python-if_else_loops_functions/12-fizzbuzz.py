@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 def fizzbuzz():
     for i in range(1, 101):
-        if i % 3 == 0:
+        if i % 3 == 0 and i % 5 != 0:
             item = "Fizz"
-        elif i % 5 == 0:
+        elif i % 5 == 0 and i % 3 != 0:
             item = "Buzz"
         elif i % 3 == 0 and i % 5 == 0:
             item = "FizzBuzz"
@@ -11,3 +11,6 @@ def fizzbuzz():
             item = i
         print(item, end=" ")
     print("\n", end="")
+
+
+fizzbuzz()
