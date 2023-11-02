@@ -10,4 +10,5 @@ def uppercase(str):
             c = ord(str[i]) - offset
         else:
             c = str[i]
-        print("{}".format(chr(c)))
+        print("{}".format(chr(c)), end="")
+    print"\n", end="")
