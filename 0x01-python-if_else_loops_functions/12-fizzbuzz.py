@@ -11,6 +11,3 @@ def fizzbuzz():
             item = i
         print(item, end=" ")
     print("\n", end="")
-
-
-fizzbuzz()
