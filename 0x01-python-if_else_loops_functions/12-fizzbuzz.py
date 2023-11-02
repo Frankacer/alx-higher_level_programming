@@ -10,4 +10,3 @@ def fizzbuzz():
         else:
             item = i
         print(item, end=" ")
-    print("\n", end="")
