@@ -19,7 +19,6 @@ def square_matrix_simple(matrix=[]):
     try:
         #append modified rows to the new matrix
         for row in matrix:
-            print(row)
             new_row = list(map(pow, row))
             new_matrix.append(new_row)
         return new_matrix
