@@ -6,18 +6,16 @@ def pow(a):
 def square_matrix_simple(matrix=[]):
     """
     Squares the elements of a matrix
-    
+
     Argument:
     matrix (matrix): The input matrix.
-    
+
     Returns:
     matrix: A modified independent copy of the initial matrix
     """
-    #create empty matrix
     new_matrix = []
 
     try:
-        #append modified rows to the new matrix
         for row in matrix:
             new_row = list(map(pow, row))
             new_matrix.append(new_row)
