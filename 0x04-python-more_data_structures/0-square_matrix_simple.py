@@ -1,0 +1,28 @@
+#!/usr/bin/python3
+def pow(a):
+    return (a ** 2)
+
+
+def square_matrix_simple(matrix=[]):
+    """
+    Squares the elements of a matrix
+    
+    Argument:
+    matrix (matrix): The input matrix.
+    
+    Returns:
+    matrix: A modified independent copy of the initial matrix
+    """
+    #create empty matrix
+    new_matrix = []
+
+    try:
+        #append modified rows to the new matrix
+        for row in matrix:
+            print(row)
+            new_row = list(map(pow, row))
+            new_matrix.append(new_row)
+        return new_matrix
+
+    except TypeError:
+        return None
